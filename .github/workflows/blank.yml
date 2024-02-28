@@ -41,6 +41,8 @@ int main()
 	system("pause");
 	return 0;
 }
+
+
 while语句
 int main()
 {
@@ -50,6 +52,41 @@ int main()
 		cout << num << endl;
 		num++;
 	}
+	system("pause");
+	return 0;
+}
+
+
+
+猜数字小游戏
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+	//生成1-100的随机数
+	int num = rand() % 100 + 1;//rand生成0到99 所以后面加1
+	//cout << num << endl;
+	int grass = 0;
+	while (1)
+	{
+		cin >> grass;
+		if (grass > num)
+		{
+			cout << "猜测过大" << endl;
+		}
+		else if (grass < num)
+		{
+			cout << "猜测过小" << endl;
+		}
+		else
+		{
+			cout << "猜对啦" << endl;
+			break;
+		}
+	}
+
 	system("pause");
 	return 0;
 }
