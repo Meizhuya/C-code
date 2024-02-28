@@ -62,9 +62,15 @@ int main()
 #include<iostream>
 #include<string>
 using namespace std;
+#include<ctime>
 
 int main()
 {
+	//添加随机数种子作用利用当前系统时间生成随机数，
+	// 防止每次随机数都一样
+	
+	srand((unsigned int)time(NULL));
+
 	//生成1-100的随机数
 	int num = rand() % 100 + 1;//rand生成0到99 所以后面加1
 	//cout << num << endl;
