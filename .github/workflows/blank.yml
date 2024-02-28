@@ -1,3 +1,4 @@
+switch语句
 #include<iostream>
 #include<string>
 using namespace std;
